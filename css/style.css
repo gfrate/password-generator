@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.div-language {
+    padding-top: 15px;
+    position: absolute;
+    left: 87.5%;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.div-result {
+    display: flex;
+    height: 24px;
+}
+
+textarea {
+    font-size: 15px;
+    border: 1px solid black;
+    height: 22px;
+    width: 350px;
+    resize: none;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    padding-top: 12.5px;
+    width: 350px;
+}
+
+p {
+    font-size: 12.5px;
+}
+
+.div-button {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 1em 1.5em;
+    font-size: 12.5px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #982016;
+    border: none;
+    border-radius: 7px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 1px 0px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #880606;
+}
+
+.div-credits {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+a {
+    color: #982016;
+    text-decoration: none;
+    font-size: 12.5px;
+}
+
+a:hover {
+    color: #880606;
+}

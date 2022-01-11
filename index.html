@@ -1,0 +1,104 @@
+<!-- Password generator by @gfrate-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="head_title_lang"></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.25">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- JavaScript -->
+        <script src="js/language.js"></script>
+        <script src="js/generator.js"></script>
+    </head>
+    <body onload="switchLanguage()">
+        <div class="div-language">
+            <select name="language" id="language" onchange="switchLanguage()">
+                <option value="English" id="lang_en"></option>
+                <option value="Italian" id="lang_it"></option>
+            </select>
+        </div>       
+        <div class="form">
+            <div>
+                <h1 class="text" id="title_lang"></h1> <br>
+                <div class="div-result">
+                    <textarea name="psw_result" id="psw_result" cols="50" rows="7.5" disabled></textarea>&nbsp;&nbsp;
+                    <span class="clipboard" id="btn_clipboard" onclick="Copy()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                        </svg>
+                    </span>
+                </div>
+                <div class="options">
+                    <div>
+                        <p class="text-options" id="length_lang"></p>
+                    </div>
+                    <div>
+                        <select name="length" id="length">
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8" selected>8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="32">32</option>
+                            <option value="64">64</option>
+                            <option value="128">128</option>
+                            <option value="256">256</option>
+                            <option value="512">512</option>
+                            <option value="1024">1024</option>
+                            <option value="2048">2048</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="options">
+                    <div>
+                        <p class="text-options" id="uppercase_lang"></p>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="uppercase" checked>
+                    </div>
+                </div>
+                <div class="options">
+                    <div>
+                        <p class="text-options" id="lowercase_lang"></p>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lowercase" checked>
+                    </div>
+                </div>
+                <div class="options">
+                    <div>
+                        <p class="text-options" id="numbers_lang"></p>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="numbers" checked>
+                    </div>
+                </div>
+                <div class="options">
+                    <div>
+                        <p class="text-options" id="special_lang"></p>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="special" checked>
+                    </div>
+                </div>
+                <div class="div-button">
+                    <button id="btn_generate_lang" onclick="Generate()"></button>
+                </div>
+                <div class="div-credits">
+                    <p class="credits" id="credits_lang"></p>
+                    <a href="https://github.com/gfrate" target="_blank">@gfrate</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
